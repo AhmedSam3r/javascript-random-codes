@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello World!</h1>
+    <!--best practice to add script element at the end of html content-->
+    <!--Why?
+        1)Browser run code top-bottom. 
+            so if we put js in header, it will render it first and it won't be able to render the content of the page
+            ==>leading to bad UX
+        2)Almost always the code we have between  script elements want to talk with the elements on that page like showing/hiding some elements.
+            ==> we are confident that all elements are rendered by the browser-->
+    <script>
+        // printing a string
+        console.log('Hello world');
+    </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="displayCardQuantity()">Show Quantity</button>
+    <button onclick="addToCart()">Add to Cart</button>
+    <button onclick="plusTwo()">+2</button>
+    <button onclick="plusThree()">+3</button>
+    <button onclick="resetCard()">Reset Cart</button>
+    <script>
+        let cartQuantity = -1;
+        const displayCardQuantity = () => {
+            console.log(`Cart Quantity: ${cartQuantity}`);
+        }
+
+        const addToCart = () => {
+            cartQuantity ++;
+            displayCardQuantity();
+        }
+
+        const plusTwo = () => {
+            cartQuantity += 2;
+            displayCardQuantity();
+        }
+
+        const plusThree = () => {
+            cartQuantity += 3;
+            displayCardQuantity();
+        }
+
+        const resetCard = () => {
+            cartQuantity = 0;
+            console.log("CARD IS RESET");
+            displayCardQuantity();
+        }
+
+    </script>
+</body>
+</html>
